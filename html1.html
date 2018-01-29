@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SY Portfolio</title>
+    <!--Bootstrap css file-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--css file-->
+    <link rel="stylesheet" href="styles/style1.css">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--javascript file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+ <!--navbar-->
+ <nav id="mainav" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">My Portfolio</a>
+     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--header-->
+<header id="maincontent" class="container" tabindex="-1">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="title-logo" src="images/logo.png" alt="SY">
+    </div>
+    <div class="col-md-6 text-uppercase text-right">
+     <h1 class="title-super text-thin">S Yemperala</h1>
+     <h4>Front-end-Developer</h4>
+    </div>
+  </div>
+</header>
+
+<!--hrtag-->
+<div id ="hrtag" class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <hr>
+    </div>
+   </div>
+</div>
+
+<!--image for portfolio-->
+<div id="codegirl">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <img class="main-pic img-responsive" src="images/coding3.jpg" sizes="(max-width: 40em) 100vw, 50vw"
+srcset="images/coding3.jpg 1.2x" alt="code girl">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Heading-->
+<section id="tft" class="container" >
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Featured Work</h2>
+    </div>
+  </div>
+</section>
+
+  <main id="projects">
+    <article id="art1">
+     <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img class="ar1 img-rsponsive" src="images/sc2.jpg" srcset="images/sc2.jpg 0.8x" data-toggle="modal"
+data-target="#project1" sizes="(max-width: 40em) 100vw, 50vw" alt="Item Catalog">
+          <h3 class="text-uppercase">Item Catalog</h3>
+          <p>This is my Item Catalog Application</p>
+        </div>
+        <div class="col-md-4">
+          <img class="ar2 img-responsive" src="images/sc5.jpg" sizes="(max-width: 40em) 100vw, 50vw"
+srcset="images/sc5.jpg 0.8x" data-toggle="modal" data-target="#project2" alt="Trailers">
+          <h3 class="text-uppercase">Movie Trailers</h3>
+          <p>These are trailers</p>
+        </div>
+        <div class="col-md-4">
+          <img class="ar3 img-responsive" src="images/sc3.jpg" sizes="(max-width: 40em) 100vw, 50vw"
+srcset="images/sc3.jpg 0.8x" data-toggle="modal" data-target="#project3" alt="Neighborhood Map">
+          <h3 class="text-uppercase">Neighborhood Map</h3>
+          <p>This is my Neighborhood Map Application</p>
+        </div>
+       </div>
+     </div>
+   </article>
+ </main>
+
+
+<!--footer-->
+<footer id="ft1">
+  <div class="container">
+    <div class="row">
+      <div class="top1 col-lg-10 text-center">
+        Copyright &copy; SY Portfolio 2017
+      </div>
+      <div class="top2 col-lg-2 right">
+       <span>
+        <i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp;
+        <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+       </span>
+      </div>
+     </div>
+  </div>
+</footer>
+
+<!--portfolio modals-->
+<div class="container">
+ <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+ aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Item Catalog</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="images/sc2.jpg" alt="Item Catalog">
+       <article id="flower">
+        <h5>This project lists the items in a catalog and its description from SQL
+database which lets the admin perform CRUD operations and also lets user to add
+and edit his own category.</h5>
+        </article>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<div class="container">
+ <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+  <div class="modal-dialog">
+   <div class="modal-content">
+    <div class="modal-header">
+     <h4 class="modal-title" id="myModalLabel1">Movie Trailers</h4>
+    </div>
+    <div class="modal-body">
+      <img class="img-responsive" src="images/sc5.jpg" alt="trailers">
+     <article id="trailer">
+      <h5>This was my first project in this class. Its about displaying our favorite movie trailers
+in a single webpage using python,html,css,bootstrap.</h5>
+     </article>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<div class="container">
+ <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+  <div class="modal-dialog">
+   <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title" id="myModalLabel2">Neighborhood Map</h4>
+    </div>
+    <div class="modal-body">
+      <img class="img-responsive" src="images/sc3.jpg" alt="fractal">
+     <article id="fract">
+      <h5>This project lets the user click the markers on a google map to see the
+location and also the wikipedia information of that particular marker.</h5>
+     </article>
+    </div>
+    <div class="modal-footer">
+     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+</body>
+</html>
